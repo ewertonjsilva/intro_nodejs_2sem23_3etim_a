@@ -9,4 +9,26 @@ module.exports = {
             return response.status(500).json({confirma: 'Erro', message: error});
         }
     }, 
-};  
+    async cadastrarPedidos(request, response) {
+        try {
+            return response.status(200).json({confirma: 'Cadastrar Pedidos'});
+        } catch (error) {
+            return response.status(500).json({confirma: 'Erro', message: error});
+        }
+    }, 
+    async editarPedidos(request, response) {
+        try {
+            return response.status(200).json({confirma: 'Editar Pedidos'});
+        } catch (error) {
+            return response.status(500).json({confirma: 'Erro', message: error});
+        }
+    }, 
+    async apagarPedidos(request, response) {
+        try {
+            return response.status(200).json({confirma: 'Apagar Pedidos'});
+        } catch (error) {
+            return response.status(500).json({confirma: 'Erro', message: error});
+        }
+    }, 
+};
+
